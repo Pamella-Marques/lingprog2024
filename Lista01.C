@@ -149,7 +149,16 @@ void q13(){
 }
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base + altura) e a área (base * altura).
-
+void q14(){
+float num, num1, perimetro, area;
+ printf("Digite o valor da base do retângulo: \n");
+    scanf("%f", &num);
+    printf("Digite o valor da altura do retângulo: \n");
+    scanf("%f", &num1);
+    perimetro = (num+num1);
+    area = (num*num1);
+    printf("O perimetro do retangulo é: %.2f e a área é: %.2f\n",perimetro, area );
+}
 //15. Faça um programa que leia o valor de um produto, o percentual
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
@@ -190,6 +199,6 @@ void q13(){
 //    necessário também ler o valor da cotação do dólar.
 
 int main () {
-    q13();
+    q14();
     return EXIT_SUCCESS;
 }
