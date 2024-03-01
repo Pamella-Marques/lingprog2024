@@ -234,12 +234,19 @@ void q19(){
     printf("digite o período de atraso:\n");
     scanf("%f", &AT);
     Final = PV + (TJ*AT);
-     printf("o valor da prestação atrasada: %.2f, o período de atraso: %.2f, o juros acrescentado pelo período de atraso: %.2f e prestação final: %.2f\n", PV, AT, TJ, FINAL );}
+     printf("o valor da prestação atrasada: %.2f, o período de atraso: %.2f, o juros acrescentado pelo período de atraso: %.2f e prestação final: %.2f\n", PV, AT, TJ, Final);}
 //20. Faça um programa que efetue a apresentação do valor da conversão
 //    em real (R$) de um valor lido em dólar (US$). Para isso, será
 //    necessário também ler o valor da cotação do dólar.
-
+void q20(){
+    float valor, taxa, convertido;
+    printf("Por favor informe o valor em R$:\n");
+    scanf("%f", &valor);
+    printf("Por favor a taxa de reais para dólares:\n");
+    scanf("%f", &taxa);
+    convertido = valor*taxa;
+    printf("Valor original: R$ %.f\nTaxa de conversão: %.2f\nValor convertido: US$ %.2f\n", valor, taxa, convertido);}
 int main () {
-    q19();
+    q20();
     return EXIT_SUCCESS;
 }
