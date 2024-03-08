@@ -160,19 +160,12 @@ void questao09() {int nascimento, atual, idade;
 void questao10() {int num, num1, num2, menor, maior;
 	printf ("Digite três numeros inteiros\n");
 	scanf("%d %d %d", &num, &num1, &num2);
-	
-	if (num<num1)
-		{if (num<num2)
-		menor = num;
-	else 
-		menor = num2;}
-	
-	else  (num1<num2){
-			menor = num1;}
-		else {
-			menor = num2;
-
-}}
+	if (num>num1 && num>num2 ){
+    if (num1>num2) print ("%f, %f, %f", num, num1, num2);
+    else print ("%f, %f, %f", num, num2, num1")}
+    else if (num1>num && num1>num2){
+    if num>num2 print ("%f, %f, %f", num1, num, num2); else print ("%f, %f, %f", num1, num2, num);}
+    else {if num1>num print ("%f, %f, %f", num2, num1, num); else print ("%f, %f,%f", num2, num, num1);}}
 
 //11. Faça um programa que leia 3 números e imprima o maior deles.
 void questao11() {
