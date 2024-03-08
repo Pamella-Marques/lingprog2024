@@ -53,12 +53,33 @@ else {printf("Não é nÚmero multiplo de 3\n");}
 }
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
-void questao04() {
+void questao04() {int numero01, resto;
+    printf("Digite um número");
+    scanf("%d", &numero01);
+    resto = numero01 % 5;
+
+if(resto ==0 )
+{
+printf("É divisível por 5\n");
+}
+else {printf("Não é divisível por 5\n");}
+	
 	
 }
 
 //5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
-void questao05() {
+void questao05() {int numero, resto, resto1;
+    printf("Digite um número\n");
+    scanf("%d", &numero);
+	resto = numero % 3;
+    if ( resto == 0)
+	resto1 = numero % 7;
+	if ( resto1 == 0)
+	{
+	printf("É divisível por 3 e 7\n"); }
+	else
+	{
+	printf("Não é divisível por 3 e 7\n"); }
 
 }
 
@@ -66,34 +87,92 @@ void questao05() {
 //estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 //bruto. Faça um programa em linguagem C que permita entrar com o salário bruto e o
 //valor da prestação e informar se o empréstimo pode ou não ser concedido.
-void questao06() {
+void questao06() {float salario, prestacao, informar;
+    printf("Digite o valor do salário bruto:\n");
+    scanf("%f", &salario);
+	printf("Digite o valor da prestação\n");
+    scanf("%f", &prestacao);
+	 
+    if ((salario*0.3)<prestacao)
+	{
+	printf("Empréstimo não aprovado\n"); }
+	else
+	{
+	printf("Empréstimo aprovado\n"); }
 
 }
 
 //7. Faça um programa que leia um número e indique se o número está compreendido
 //entre 20 e 50 ou não.
-void questao07() {
+void questao07() {int numero;
+    printf("Digite um número\n");
+    scanf("%d", &numero);
+    if ( numero>20)
+	if ( numero<50)
+	{
+	printf("O número %d está entre 20 e 50\n",numero); }
+	else
+	{
+	printf("O número %d não está entre 20 e 50\n",numero); }
+
 
 }
 
 //8. Faça um programa que leia um número e imprima uma das mensagens: 
 //"Maior do que 20", "Igual a 20"ou "Menor do que 20".
-void questao08() {
+void questao08() {int numero;
+    printf("Digite um número\n");
+    scanf("%d", &numero);
+    if ( numero>20)
+	{
+	printf("O número %d é maior que 20\n",numero); }
+	else if ( numero==20)
+	{
+	printf("O número %d é igual a 20\n",numero); }
+	else if (numero<20)
+	{
+	printf("O número %d é menor que 20\n",numero); }
 	
 }
 
 //9. Faça um programa que permita entrar com o ano de nascimento da pessoa e como ano
 //atual. O programa deve imprimir a idade da pessoa. Não se esqueça de verificar se o
 //ano de nascimento informado é válido.
-void questao09() {
+void questao09() {int nascimento, atual, idade;
+    printf("Digite o ano de nascimento no formato AAAA\n");
+    scanf("%d", &nascimento);
+	if (nascimento>1900){
+	printf("Digite o ano de atual no formato AAAA\n");
+    scanf("%d", &atual);}
+	if (nascimento>atual) {
+	printf("Dados inválidos!!! \nAno de nascimento não pode ser maior que ano atual\n");}
+	else if (atual>1900) {
+	idade = (atual-nascimento);
+	printf("A idade para o ano informado é:%d \n", idade); }
+	else
+	{
+	printf("O ano informado não é válido\n"); }
 	
 }
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
 //crescente.
-void questao10() {
+void questao10() {int num, num1, num2, menor, maior;
+	printf ("Digite três numeros inteiros\n");
+	scanf("%d %d %d", &num, &num1, &num2);
+	
+	if (num<num1)
+		{if (num<num2)
+		menor = num;
+	else 
+		menor = num2;}
+	
+	else  (num1<num2){
+			menor = num1;}
+		else {
+			menor = num2;
 
-}
+}}
 
 //11. Faça um programa que leia 3 números e imprima o maior deles.
 void questao11() {
