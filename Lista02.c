@@ -161,10 +161,12 @@ void questao10() {int n1, n2, n3;
 	printf ("Digite três numeros inteiros\n");
 	scanf("%d %d %d", &n1, &n2, &n3);
 	if (n1>n2 && n1>n3 ){
-    if (n2>n3) printf ("%f, %f, %f", n1, n2, n3);
-    else printf ("%f, %f, %f", n1, n3, n2);}
+    if (n2>n3) 
+        printf ("%f, %f, %f", n1, n2, n3);
+    else 
+        printf ("%f, %f, %f", n1, n3, n2);}
     else if (n2>n1 && n2>n3){
-    if n1>n3
+    if (n1>n3)git 
         printf ("%f, %f, %f", n2, n1, n3);
     else if {n2>n1
         printf ("%f, %f, %f", n3, n2, n1);
