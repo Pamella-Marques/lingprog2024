@@ -157,15 +157,15 @@ void questao09() {int nascimento, atual, idade;
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
 //crescente.
-void questao10() {int num, num1, num2, menor, maior;
+void questao10() {int n1, n2, n3;
 	printf ("Digite três numeros inteiros\n");
-	scanf("%d %d %d", &num, &num1, &num2);
-	if (num>num1 && num>num2 ){
-    if (num1>num2) print ("%f, %f, %f", num, num1, num2);
-    else print ("%f, %f, %f", num, num2, num1")}
-    else if (num1>num && num1>num2){
-    if num>num2 print ("%f, %f, %f", num1, num, num2); else print ("%f, %f, %f", num1, num2, num);}
-    else {if num1>num print ("%f, %f, %f", num2, num1, num); else print ("%f, %f,%f", num2, num, num1);}}
+	scanf("%d %d %d", &n1, &n2, &n3);
+	if (n1>n2 && n1>n3 ){
+    if (n2>n3) print ("%f, %f, %f", n1, n2, n3);
+    else print ("%f, %f, %f", n1, n3, n2")}
+    else if (n2>n1 && n2>n3){
+    if n1>n3 print ("%f, %f, %f", n2, n1, n3); else print ("%f, %f, %f", n2, n3, n1);}
+    else {if n2>n1 print ("%f, %f, %f", n3, n2, n1); else print ("%f, %f,%f", n3, n1, n2);}}
 
 //11. Faça um programa que leia 3 números e imprima o maior deles.
 void questao11() {
