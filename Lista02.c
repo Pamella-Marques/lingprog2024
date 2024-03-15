@@ -157,35 +157,64 @@ void questao09() {int nascimento, atual, idade;
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
 //crescente.
-void questao10() {int n1, n2, n3;
+void questao10() {
+    int n1, n2, n3;
 	printf ("Digite três numeros inteiros\n");
-	scanf("%d %d %d", &n1, &n2, &n3);
-	if (n1>n2 && n1>n3 ){
-    if (n2>n3) 
-        printf ("%f, %f, %f", n1, n2, n3);
-    else 
-        printf ("%f, %f, %f", n1, n3, n2);}
-    else if (n2>n1 && n2>n3){
-    if (n1>n3)git 
-        printf ("%f, %f, %f", n2, n1, n3);
-    else if {n2>n1
-        printf ("%f, %f, %f", n3, n2, n1);
-    else if (n3>n1 && n3>n2)
-        printf ("%f, %f, %f", n3, n1, n2);}}
+	scanf("%d, %d, %d", &n1, &n2, &n3);
+	if (n1<n2 && n1<n3) {
+        if (n2<n3) 
+            printf("%d, %d, %d", n1, n2, n3);
+       else 
+            printf("%d, %d, %d", n1, n3, n2);
+    }
+    else if (n2<n1 && n2<n3) {
+        if (n1<n3)
+            printf("%d, %d, %d", n2, n1, n3);
+        else
+            printf("%d, %d, %d", n2, n3, n1);
+    }
+    else {
+        if (n2<n1)
+            printf ("%d, %d, %d", n3, n2, n1);
     else
-        printf ("%f, %f, %f", n2, n3, n1);}
+        printf ("%d, %d, %d", n3, n1, n2);}
+}
 
 //11. Faça um programa que leia 3 números e imprima o maior deles.
 void questao11() {
-	
+    int numb1, numb2, numb3;
+    printf ("digite o primeiro numero: ");
+	scanf ("%d", &numb1);
+    printf  ("digite o segundo numero: ");
+    scanf ("%d", &numb2);
+    printf  ("digite o terceiro numero: ");
+    scanf ("%d", &numb3);
+     if (numb1>numb2 && numb1>numb3) { 
+         printf ("Maior numero: %d", numb1);
+     }
+     else if (numb2>numb1 && numb2>numb3) { 
+         printf ("Maior numero: %d", numb2);
+    }
+    else {
+        printf ("Maior numero: %d", numb3);
+    }
 }
 
 //12. Faça um programa que leia a idade de uma pessoa e informe:
 //• Se é maior de idade
 //• Se é menor de idade
 //• Se é maior de 65 anos
-void questao12() {
-	
+void questao12() { int idade;
+     printf ("Digite a idade: ");
+    scanf ("%d", &idade);
+    if (idade >= 65)
+        printf ("Maior que 65");
+    else if (idade >= 18)
+	    printf ("Maior de idade");
+    else
+        printf ("Menor de idade");
+}
+
 }
 
 //13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota da
@@ -332,6 +361,52 @@ int main() {
 		case 10:
 			questao10();
 			break;
+        case 11:
+            questao11();
+            break;
+        case 12:
+            questao12();
+            break;
+        case 13:
+            questao13();
+            break;
+        case 14:
+            questao14();
+            break;
+        case 15:
+            questao15();
+            break;
+        case 16:
+            questao16();
+            break;
+        case 17:
+            questao17();
+            break;
+        case 18:
+            questao18();
+            break;
+        case 19:
+            questao19();
+            break;
+        case 20:
+            questao20();
+            break;
+        case 21:
+            questao21();
+            break;
+        case 22:
+            questao22();
+            break;
+        case 23:
+            questao22();
+            break;
+        case 24:
+            questao24();
+            break;
+        case 25:
+            questao25();
+            break;
+
 		default:
 			printf("Opção inválida!");
 	}
