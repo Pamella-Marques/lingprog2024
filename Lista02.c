@@ -215,12 +215,27 @@ void questao12() { int idade;
         printf ("Menor de idade");
 }
 
-}
-
 //13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota da
-//prova 2 de umaluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
-void questao13() {
-	
+//prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
+void questao13() { float nota1, nota2, media;
+                   char nome[20];
+    printf("Informe o nome do aluno(a): ");
+    scanf("%s", &nome);
+    printf("digite a nota 1: \n");
+    scanf("%d", &nota1);
+    printf("digite a nota 2: \n");
+    scanf("%d", &nota2);
+        media = (nota1 + nota2)/2;
+    printf("-------------------------Dados-----------------------\n");
+    printf("Aluno: %s \n", nome);
+    printf("Notas - nota 1: %f nota 2: %f \n", nota1, nota2);
+    printf("Media: %f \n", media);
+if (media >= 7)
+     printf("Aprovado");
+else if (media >= 3)
+     printf("Prova final");
+ else
+     printf("\nReprovado");
 }
 
 //14. Faça um programa que permita entrar com o salário de uma pessoa e imprima o
@@ -231,10 +246,20 @@ void questao13() {
 //Maior que R$1200,00 e menor ou igual a R$2000,00 25%
 //Maior que R$2000,00 30%
 void questao14() {
-	
+    float salario;
+     printf ("Digite o salario: ");
+    scanf ("%f", &salario);
+	if (salario <= 600,00)
+    printf("Isento de INSS");
+    else if (salario <= 1200,00)
+    printf("20%: %.2f", salario * 0.20);
+    else if (salario <= 2000,00)
+    printf("25%: %.2f", salario*0.25);
+else
+    printf("30%: %.2f", salario*0.30);
 }
 
-//15. Um comerciante comprou umproduto e quer vendê-lo com umlucro de 45% se o valor
+//15. Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o valor
 //da compra for menor que R$20,00, caso contrário, o lucro será de 30%. Faça um programa que leia o valor do produto e imprima o valor da venda.
 void questao15() {
 	
