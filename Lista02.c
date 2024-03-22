@@ -536,8 +536,22 @@ void questao23() {
             calorias += 200;
             break;
 }
-switch (bebidas) {
+switch (bebida) {
     case 1:
+     calorias += 20;
+            break;
+        case 2:
+            calorias += 70;
+            break;
+        case 3:
+            calorias += 100;
+            break;
+        case 4:
+            calorias += 75;
+            break;
+        default:
+            printf("Dieta inválida! \n");
+}
 }
 
 //24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para cobrar dosmotoristas o DUT. Sabendo-se que o mês em que o emplacamento do carro deve ser renovado é determinado pelo último número da placa do mesmo, faça um programa que, a partir da leitura da placa do carro, informe omês em que o emplacamento deve ser renovado.
