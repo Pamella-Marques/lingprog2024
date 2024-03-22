@@ -454,7 +454,28 @@ void questao21() {
 
 //22. Construa um programa que leia o percurso em quilómetros, o tipo do carro e informe o consumo estimado de combustível, sabendo-se que umcarro tipo C faz 12 kmcom umlitro de gasolina, um tipo B faz 9 kme o tipo C, 8 kmpor litro.
 void questao22() {
-	
+	char tipo;
+    float percurso, consumo;
+    printf(" Digite o tipo de carro <A, B ou C>: ");
+    scanf("%c", &tipo);
+    printf("Digite o percurso em km: ");
+    scanf("%f", &percurso);
+    switch (tipo) {
+    case 'A':
+        consumo = percurso / 12;
+        printf(" Consumo estimado: %.2f", consumo);
+        break;
+    case 'B':
+        consumo = percurso / 9;
+        printf(" Consumo estimado: %.2f", consumo);
+        break;
+    case 'C':
+        consumo = percurso / 8;
+        printf(" Consumo estimado: %.2f", consumo);
+        break;
+    default:
+        printf("Tipo de carro invalido!");
+    }
 }
 
 //23. Crie um programa que informe a quantidade total de calorias de uma refeição a partir da escolha do usuário que deverá informar o prato, a sobremesa, e bebida conforme a tabela a seguir.
@@ -464,12 +485,73 @@ void questao22() {
 //Frango 250cal Mousse diet 170cal Suco de melão 100cal
 //Carne 350cal Mousse chocolate 200cal Refrigerante diet 65cal
 void questao23() {
-
+        int calorias;
+        int prato, sobremesa, bebida;
+        printf("\nPrato");
+        printf("\n1 - Vegetariano");
+        printf("\n2 - Peixe");
+        printf("\n3 - Frango");
+        printf("\n4 - Carne");
+        printf("\nDigite a opcao: ");
+        scanf("%d", &prato);
+        printf("\nSobremesa");
+        printf("\n1 - Abacaxi");
+        printf("\n2 - Sorvete diet");
+        printf("\n3 - Mousse diet");
+        printf("\n4 - Mousse de chocolate");
+        printf("\nDigite a opcao: ");
+        scanf("%d", &sobremesa);
+        printf("\nBebida");
+        printf("\n1 - Cha");
+        printf("\n2 - Suco de laranja");
+        printf("\n3 - Suco de melao");
+        printf("\n4 - Refrigerante diet");
+        printf("\nDigite a opcao: ");
+        scanf("%d", &bebida);
+        switch (prato){
+        case 1:
+            calorias += 180;
+            break;
+        case 2:
+            calorias += 230;
+            break;
+        case 3:
+            calorias += 250;
+            break;
+        case 4:
+            calorias += 350;
+            break;
+        }
+        switch (sobremesa) {
+        case 1: 
+            calorias += 75;
+            break;
+        case 2:
+            calorias += 110;
+            break;
+        case 3:
+            calorias += 170;
+            break;
+        case 4:
+            calorias += 200;
+            break;
+}
+switch (bebidas) {
+    case 1:
 }
 
 //24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para cobrar dosmotoristas o DUT. Sabendo-se que o mês em que o emplacamento do carro deve ser renovado é determinado pelo último número da placa do mesmo, faça um programa que, a partir da leitura da placa do carro, informe omês em que o emplacamento deve ser renovado.
 void questao24() {
-	
+	int placa, milhar, centena, dezena;
+    printf("Digite o numero da placa do carro no formato <xxxx>: ");
+    scanf("%d", &placa);
+    milhar = placa / 1000;
+    placa = placa - (milhar * 1000);
+    centena = placa / 100;
+    placa = placa - (centena * 100);
+    dezena = placa / 10;
+    placa = placa - (dezena * 10);
+    printf("Mes: %d", placa);
 }
 
 //25. A prefeitura contratou uma firma especializada para manter os níveis de poluição considerados ideais para umpaís do 1º mundo. As indústrias, maiores responsáveis pela poluição, foram classificadas em três grupos. Sabendo-se que a escala utilizada varia de 0,05 e que o índice de poluição aceitável é até 0,25, fazer um programa que possa imprimir intimações de acordo com o índice e a tabela a seguir:
@@ -478,7 +560,21 @@ void questao24() {
 //0,4 1º e 2º grupos
 //0,5 1º, 2º e 3º grupos
 void questao25() {
-	
+	float indice;
+    printf("Digite o indice de poluicao: \n");
+    scanf("%f", &indice);
+    if (indice >= 0.5) {
+        printf("Suspender atividades das industrias dos grupos 1, 2 e 3 \n");
+    }
+    else if (indice >= 0.4) {
+        printf("Suspender atividades das industrias dos grupos 1 e 2 \n");
+    }
+    else if (indice >= 0.3) {
+        printf("Suspender atividades das industrias do grupo 1 \n");
+    }
+    else {
+        printf ("Indice de poluicao aceitavel para todos os grupos \n");
+    }
 }
 
 int main() {
