@@ -382,11 +382,11 @@ void questao18() {
 void questao19() {
 	float num1, num2, num3;
     printf("Digite os pontos do primeiro competidor: ");
-    scanft("%f", &num1);
+    scanf("%f", &num1);
     printf("Digite os pontos do segundo competidor: ");
-    scanft("%f", &num2);
+    scanf("%f", &num2);
     printf("Digite os pontos do terceiro competidor: ");
-    scanft("%f", &num3);
+    scanf("%f", &num3);
     if (num1 < num2 && num1 < num3) {
         if (num2 < num3)
             printf("%f, %f, %f", num1, num2, num3);
