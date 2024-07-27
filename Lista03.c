@@ -16,7 +16,7 @@ void exemploPara() {
 void exemploEnquanto() {
 	int opcao=1;
 	while (opcao != 0) {
-		printf("Digite uma opção (0 para sair): ")
+		printf("Digite uma opção (0 para sair): ");
 		scanf("%d", &opcao);
 		printf("Olá\n");
 	}
@@ -26,27 +26,39 @@ void exemploRepita() {
 	int opcao;
 	do {
 		printf("Olá\n");
-		printf("Digite uma opção (0 para sair): ")
+		printf("Digite uma opção (0 para sair): ");
 		scanf("%d", &opcao);
 	} while (opcao != 0);
 }
 
 //1.Faça um programa que imprima todos os números de 1 até 100.
-
+void q01() {
+	for (int c = 1; c<=100; c++) {
+		printf("%d ", c);
+	}
+}
 //2. Faça um programa que imprima todos os números pares de 100 até 1.
 void q02() {
 	for (int c = 100; c > 0; c-=2) {
 		printf("%d ", c);
 	}
 }
-
-
 //3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
-        
-//4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
-//pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
-//e tiver mais de 21 anos.
+void q03() {int i; 
+    for (i=1; i<=500; i++) {if(i%5 == 0) 
+	   printf("%d \n", i);
+		}}
 
+//4. Faça um programa que permita entrar com o nome, a idade e o sexo de 20
+//pessoas. O programa deve imprimir o nome da pessoa se ela for do sexo masculino
+//e tiver mais de 21 anos.
+void q04() {char nome[100]; int sexo, idade, i;
+    for (i=0; i<20; i++){
+		printf("Digite o nome: ");
+		fflush(stdin);
+		fgets(nome, 100, stdin);
+	}
+}
 //5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 //sucessivas, crie um programa que calcule o produto de dois números inteiros
 //lidos. Suponha que os números lidos sejam positivos.
@@ -290,6 +302,6 @@ void q02() {
 //idade.
 
 int main() {
-    
+     q01();
 	return EXIT_SUCCESS;
 }
