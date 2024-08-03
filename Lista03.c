@@ -57,11 +57,35 @@ void q04() {char nome[100]; int sexo, idade, i;
 		printf("Digite o nome: ");
 		fflush(stdin);
 		fgets(nome, 100, stdin);
+		printf("Digite a idade: ");
+		fflush(stdin);
+		scanf("%d", &idade);
+		printf("Digite o sexo <1-Mas / 2-Fem>: ");
+		fflush(stdin);
+		scanf("%d", &sexo);
+		if (sexo == 1 && idade >21)
+		printf("Nome: %s \n", nome);
 	}
 }
 //5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 //sucessivas, crie um programa que calcule o produto de dois números inteiros
 //lidos. Suponha que os números lidos sejam positivos.
+void q05() {int i, multiplicando, multiplicador, soma;
+printf("Digite o multiplicando: ");
+scanf("%d", &multiplicando);
+printf("Digite o multiplicador: ");
+scanf("%d", &multiplicador);
+if (multiplicando < 0)
+    printf("Numero de multiplicando invalido \n");
+else if (multiplicador < 0)
+     printf("Numero de multiplicador invalido \n");
+else if (multiplicando > multiplicador)
+    printf("Multiplicando deve ser menor que o multiplicador \n");
+else { for (i=1; i <= multiplicador; i++){
+	        soma += multiplicando;}
+	   printf("Resultado: %d \n", soma);
+	}
+}
 
 //6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 //Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
@@ -302,6 +326,6 @@ void q04() {char nome[100]; int sexo, idade, i;
 //idade.
 
 int main() {
-     q01();
+     q05();
 	return EXIT_SUCCESS;
 }
