@@ -118,7 +118,7 @@ for (i=1; i<=6; i++) {
 	printf("Digite a nota da prova 2: ");
 	scanf("%d", &p2);
 	printf("Nome: %s", nome);
-	printf("Notas - p1:", );
+	printf("Notas - P1: %d \t Pgit 2: %d \n", p1, p2);
 }}
 //8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
 //Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
