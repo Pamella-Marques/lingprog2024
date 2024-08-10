@@ -107,7 +107,7 @@ for (i=2; i<20; i++) {
 //nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 //imprimir a média geral da turma.
 void q07() {char nome[100];
-int p1; p2; i;
+int p1, p2, i;
 float media=0, mediafinal=0;
 for (i=1; i<=6; i++) {
 	printf("Digite o nome: ");
@@ -348,6 +348,6 @@ void q08() {}
 //idade.
 
 int main() {
-     q06();
+     q07();
 	return EXIT_SUCCESS;
 }
