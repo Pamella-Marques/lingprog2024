@@ -92,12 +92,34 @@ else { for (i=1; i <= multiplicador; i++){
 //a partir da soma dos anteriores. Exemplo:
 //• 1 + 1 = 2, terceiro termo;
 //• 1 + 2 = 3, quarto termo, etc.
-
+void q06() {int i, fib=1, fib2=1, aux;
+printf("%d \n", fib);
+printf("%d \n", fib2);
+for (i=2; i<20; i++) {
+	aux = fib2;
+	fib2 = fib + fib2;
+	printf("%d \n", fib2);
+	fib = aux;
+}
+}
 //7. Crie um programa que permita entrar com o nome, a nota da
 //prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 //nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 //imprimir a média geral da turma.
-
+void q07() {char nome[100];
+int p1; p2; i;
+float media=0, mediafinal=0;
+for (i=1; i<=6; i++) {
+	printf("Digite o nome: ");
+	fflush(stdin);
+	fgets(nome, 100, stdin);
+	printf("Digite a nota da prova 1: ");
+	scanf("%d", &p1);
+	printf("Digite a nota da prova 2: ");
+	scanf("%d", &p2);
+	printf("Nome: %s", nome);
+	printf("Notas - p1:", );
+}}
 //8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
 //Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
 //calculado conforme a tabela a seguir:
@@ -105,7 +127,7 @@ else { for (i=1; i <= multiplicador; i++){
 //Salário menor que R$1300,00 Isento
 //Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 //Salário maior ou igual a R$2300,00 15% do salário bruto
-
+void q08() {}
 //9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
 //uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
 //a um questionário no qual constava sua idade e a sua opinião em relação ao filme:
@@ -326,6 +348,6 @@ else { for (i=1; i <= multiplicador; i++){
 //idade.
 
 int main() {
-     q05();
+     q06();
 	return EXIT_SUCCESS;
 }
