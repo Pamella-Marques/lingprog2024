@@ -118,16 +118,33 @@ for (i=1; i<=6; i++) {
 	printf("Digite a nota da prova 2: ");
 	scanf("%d", &p2);
 	printf("Nome: %s", nome);
-	printf("Notas - P1: %d \t Pgit 2: %d \n", p1, p2);
-}}
-//8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
+	printf("Notas - P1: %d \t P2: %d \n", p1, p2);
+	media = (p1+p2)/2;
+	printf("Media de notas: %.2f\n", media);
+	mediafinal += media;}
+	mediafinal = mediafinal/(i-1);
+	printf("Media de notas dos alunos: %f\n", mediafinal);
+	}
+//8. Faça um programa que permita entrar com o nome e o salário bruto de 10 pessoas.
 //Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
 //calculado conforme a tabela a seguir:
 //Salário IRRF
 //Salário menor que R$1300,00 Isento
 //Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 //Salário maior ou igual a R$2300,00 15% do salário bruto
-void q08() {}
+void q08() {int i;
+char nome[100];
+float salario, aliquota;
+for (i=1;i<=10; i++)
+{printf("Digite o nome: \n");
+fflush(stdin);
+fgets(nome, 100, stdin);
+printf("Digite o salario: \n");
+scanf("%f", &salario);
+if (salario<=1300){
+	
+}
+}}
 //9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
 //uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
 //a um questionário no qual constava sua idade e a sua opinião em relação ao filme:
