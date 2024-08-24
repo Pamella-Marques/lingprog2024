@@ -132,19 +132,30 @@ for (i=1; i<=6; i++) {
 //Salário menor que R$1300,00 Isento
 //Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 //Salário maior ou igual a R$2300,00 15% do salário bruto
-void q08() {int i;
+void q08()
+ {
+int i;
 char nome[100];
 float salario, aliquota;
-for (i=1;i<=10; i++)
-{printf("Digite o nome: \n");
-fflush(stdin);
-fgets(nome, 100, stdin);
-printf("Digite o salario: \n");
-scanf("%f", &salario);
-if (salario<=1300){
-	
+
+for (i=1;i<=10; i++) {
+	printf("Digite o nome: \n");
+    fflush(stdin);
+    fgets(nome, 100, stdin);
+    printf("Digite o salario: \n");
+    scanf("%f", &salario);
+    if (salario<=1300){
+       printf("Insento de imposto: \n");
 }
-}}
+    else {
+	if (salario<=2300){
+		aliquota = (salario*10)/100;
+}
+    else {
+	aliquota = (salario*15)/100;
+}
+    printf("Aliquota: %f\n", aliquota);
+}}}
 //9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
 //uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
 //a um questionário no qual constava sua idade e a sua opinião em relação ao filme:
@@ -365,6 +376,6 @@ if (salario<=1300){
 //idade.
 
 int main() {
-     q07();
+     q08();
 	return EXIT_SUCCESS;
 }
