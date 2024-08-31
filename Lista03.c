@@ -165,7 +165,31 @@ for (i=1;i<=10; i++) {
 //• A quantidade de pessoas que responderam regular;
 //• A percentagem de pessoas que responderam bom entre todos os expectadores
 //analisados.
-
+void q09()
+ {
+	int idade, bom=0, regular=0, excelente=0, opcao, i;
+	float mediaIdade=0, percBom;
+	for (i=1; i<=20; i++){
+		printf ("Digite a idade: ");
+		scanf("%d", &idade);
+		printf("Dê sua opiniao sobre o filme: \n");
+		printf("1 - regular\t");
+		printf("2 - bom\t");
+		printf("3 - excelente\n");
+		scanf("%d", &opcao);
+		if (opcao == 1)
+		   regular++;
+		else if (opcao == 2)
+		    bom++;
+		else {
+			mediaIdade += idade;
+			excelente++;
+		}
+	}
+	mediaIdade = mediaIdade / excelente;
+	printf("Media de idades das pessoas que responderam excelente: %f\n", mediaIdade);
+	printf("Media de idades das pessoas que responderam excelente: %f\n", mediaIdade);
+	}
 //10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 //que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
 //jogadores, crie um programa que apresente as seguintes informações:
