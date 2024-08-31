@@ -188,7 +188,7 @@ void q09()
 	}
 	mediaIdade = mediaIdade / excelente;
 	printf("Media de idades das pessoas que responderam excelente: %f\n", mediaIdade);
-	printf("Media de idades das pessoas que responderam excelente: %f\n", mediaIdade);
+	printf("Quantidade de pessoas que responderam regular: %d\n", regular);
 	}
 //10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 //que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
